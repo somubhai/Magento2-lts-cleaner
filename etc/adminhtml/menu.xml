@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Lts_CacheReindex::cachereindex" title="Lts Cleaner" module="Lts_CacheReindex" sortOrder="21" resource="Lts_CacheReindex::cachereindex"/>
+        <add id="Lts_CacheReindex::reindex" title="Reindexing" module="Lts_CacheReindex" sortOrder="10" action="cachereindex/indexer/reindex" resource="Lts_CacheReindex::cachereindex" parent="Lts_CacheReindex::cachereindex"/>
+        <add id="Lts_CacheReindex::cache" title="Cache Clean" module="Lts_CacheReindex" sortOrder="20" action="cachereindex/cache/clean" resource="Lts_CacheReindex::cachereindex" parent="Lts_CacheReindex::cachereindex"/>
+    </menu>
+</config>
